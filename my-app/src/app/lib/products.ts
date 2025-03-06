@@ -1,6 +1,6 @@
 import { Product } from "./definitions";
 
-const Products: Product[] = [
+const  Products: Product[] = [
     {
         id: "1",
         image: "/fries/fried-chicken.jpg",
