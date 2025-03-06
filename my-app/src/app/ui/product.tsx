@@ -3,8 +3,6 @@ import Image from "next/image";
 import { ProductCardProps } from "../lib/definitions";
 
 export const ProductCard: React.FC<ProductCardProps> = ({
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    id,
     image,
     name,
     price,
@@ -29,7 +27,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             <div className="px-6 pt-4 pb-2">
                 <button
                     className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                    onClick={addToCart}
+                    onClick={() => addToCart()}
                 >
                     Add to Cart
                 </button>
