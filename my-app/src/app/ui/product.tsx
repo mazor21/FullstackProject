@@ -1,8 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import { ProductCardProps } from "../lib/definitions";
+import Link from "next/link";
 
 export const ProductCard: React.FC<ProductCardProps> = ({
+    id,
     image,
     name,
     price,
@@ -12,6 +14,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
     return (
         <div className="max-w-sm rounded overflow-hidden shadow-lg p-4">
+                        <Link href={`/product/${id}`}>
             <Image
                 className="w-full"
                 src={image || defaultImage}
@@ -20,6 +23,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                 height={500}
                 onError={(e) => (e.currentTarget.src = defaultImage)}
             />
+            </Link>
             <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">{name}</div>
                 <p className="text-gray-700 text-base">${price.toFixed(2)}</p>

@@ -11,7 +11,7 @@ const  Products: Product[] = [
     {
         id: "2",
         image: "/fries/ff1.jpg",
-        name: "Super Fries",
+        name: "Super Fries🦄",
         price: 2.99,
         description: '"Truth, Justice... French Fries...?" Superman\nClassic golden and crispy french fries.'
     },
