@@ -1,9 +1,22 @@
 {
+  "apiFolder": "pages/api",
+  "schemaFolders": [
+    "models"
+  ],
+  "definition": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Next Swagger API Example",
+      "version": "1.0"
+    }
+  },
   "dependencies": {
+    "dotenv": "^16.4.7",
     "drizzle-orm": "^0.40.0",
     "pg": "^8.13.3"
   },
   "devDependencies": {
+    "@types/dotenv": "^6.1.1",
     "@types/pg": "^8.11.11",
     "drizzle-kit": "^0.30.5"
   }
